@@ -1,0 +1,14 @@
+    1.A. W jakim celu używa się klas abstrakcyjnych, a w jakim interfejsów?
+    Klasy abstrakcyjne w przeciwieństwie do interfejsów mogą zawierać ciała metod. Klasy potomne dziedziczą po klasie abstrakcyjnej wszystkie zachowania, jednak w Javie
+    mam ograniczenie do dziedziczenia jednej klasy. W takim przypadku lepiej użyć jest interfejsów, ponieważ klasy potomne mogą implementować wiele interfejsów.
+    Interfejsy mogą zawierać jedynie deklaracje metod, nie implementację. W klasach potomnych implementujących interfejsy należy dodać implementację metod
+    zawartych w interfejsie.
+    W większości przypadków lepszym wyborem będzie użycie interfejsów, ale są przypadki gdzie lepiej sprawdzą się klasy abstrakcyjne, np. kiedy mamy do czynienia
+    ze strukturą hierarchiczną (przykład: ssak > zwierze > pies > owczarek). W łatwy sposób możemy dodać metodę dla całej rodziny ssaków.
+
+    1.B. Czym różni się tablica od listy liniowej?
+    Pierwszą różnicą jest to, że w przypadku tablicy musimy zdecydować już na początku o wielkości tej tablicy. W przypadku linked list kolejne elementy dodaje się
+    jedynie przez dodanie powiązania z poprzednim lub kolejnym elementem. W przypadku tablic kosztowne może okazać się jeśli wypełnimy już wszystkie wolne miejsca,
+    a będziemy chcieli dodać kolejny element (należy wtedy stworzyć nową, większą tablice i przenieść wszystkie elementy do niej).
+    Kolejną różnicą jest możliwość przychowania różnych typów danych w linked list. W przypadku tablicy jesteśmy ograniczeni do jednego, ustalonego na początku typu.
+    Dodawanie i usuwanie elemetów w linked listach jest szybsze niż w tablicach, ale wymagają więcej pamięci.
